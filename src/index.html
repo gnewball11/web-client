@@ -1,0 +1,23 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <script src="electricity-consumption-client.js"></script>                         
+        <title>spectral-test</title> 
+    </head> 
+    <body> 
+     
+        <h1>Electricity Consumption</h1> 
+
+
+
+		<label for="start-date">Start Date</label><br>
+		<input type="text" id="start-date" name="start-date" value="2019-01-02T00:00:00"><br>
+		<label for="end-date">End Date</label><br>
+		<input type="text" id="end-date" name="end-date" value="2019-01-02T01:59:59"><br>
+
+        <button onClick="getMeterReads(document.getElementById('start-date').value, document.getElementById('end-date').value)"> Get Reads </button>
+        <!-- table for showing data -->
+        <table id="meter-reads"></table> 
+    </body> 
+</html> 
